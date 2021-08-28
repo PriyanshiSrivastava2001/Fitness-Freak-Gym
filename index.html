@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Freak Gym</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@500&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Hahmlet:wght@500&family=Merriweather:wght@700&family=Style+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital@1&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Reset */
+        body{
+            margin: 0px;
+            padding: 0px;
+            height: 800px;
+            background: url('Images/bg.jpg');
+            background-size: 1700px;
+            background-repeat: no-repeat;
+            font-family: 'Hahmlet', serif;
+            font-weight: 5000;
+        }
+
+        .left{
+            display:inline-block;
+            position: absolute;
+            top: 20px;
+            left: 35px;
+
+        }
+
+        .left img{
+            width: 125px;
+            height: 80px;
+            padding-left: 28px;
+        }
+
+        .left div{
+            text-align: center;
+            line-height: 20px;
+            color: rgb(241, 145, 145);
+            font-size: 20px;
+        }
+
+        .mid{
+            display: block;
+            width: 50%;
+            margin: 20px auto;
+        }
+
+        .right{
+            display: inline-block;
+            position: absolute;
+            top: 33px;
+            right: 34px;
+
+        }
+
+        .right img{
+            width: 25px;
+            height: 30px;
+            padding-top: 0px;
+            padding-right: 0px;
+            filter: invert(100%);
+            margin: 0px 0px;
+
+        }
+
+        .navbar{
+            display: inline-block;
+
+        }
+
+        .navbar li{
+            display: inline-block;
+            font-size: 21px;
+            font-family: 'Merriweather', serif;
+        }
+
+        .navbar li a{
+            color: rgb(134, 206, 240);
+            text-decoration: none;
+            padding: 34px 16px;
+        }
+
+        .navbar li a:hover, .navbar li a:active{
+            text-decoration: underline;
+            color: rgb(173, 235, 173);
+        }
+
+        .btn{
+            background-color: lavender;
+            color: black;
+            font-family: 'Anton', sans-serif;
+            font-size: 20px;
+            font-weight: normal;
+            border: 1px solid rgb(5, 0, 0);
+            border-radius: 7px;
+            padding: 2px 15px;
+            margin: 0px 6px;
+            cursor: pointer;
+        }
+
+        .btn:hover{
+            background-color: burlywood;
+        }
+
+        .container{
+            border: 6px solid rgb(87, 88, 92);
+            margin: 88px 70px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            padding-left: 5px;
+            padding-right: 5px;
+            width: 32%;
+            border-radius: 20px;
+            height: 60%;
+        }
+
+        .form-group input{
+            text-align: center;
+            display: block;
+            font-size: 23px;
+            font-weight: bolder;
+            font-family: 'STIX Two Text', serif;
+            width: 400px;
+            padding: 1px;
+            border: 2px solid rgb(65, 62, 62);
+            border-radius: 8px;
+            margin: 6px auto;
+        }
+
+        .container h1{
+            text-align: center;
+            font-size: 60px;
+            color: rgb(202, 216, 243);
+        }
+
+        .container button{
+            text-align: center;
+            display: block;
+            width: 28%;
+            margin: 30px auto;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="Images/logo.png" alt="">
+            <div>Fitness Freak Gym</div>
+
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="about us.html">ABOUT US</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="contact us.html">CONTACT US</a></li>
+            </ul>
+
+        </div>
+
+        <div class="right">
+            <img src="Images/call.jpg">
+            <button class="btn">Call Us</button>
+            <img src="Images/at.jpg">
+            <button class="btn"> Email Us</button>
+
+        </div>
+    </header>
+    <div class="container">
+        <h1>JOIN NOW</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Name">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Age">
+            </div> 
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Gender">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Contact number">
+            </div>
+
+            <div class="form-group">
+                <input type="email" name="" placeholder="Email id">
+            </div>
+
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Locality">
+            </div>
+
+            <button class="btn">SUBMIT</button>
+
+        </form>
+
+    </div>
+    
+</body>
+</html>
